@@ -13,7 +13,7 @@
         <activity android:name=".Dashboard" />
 
         <activity android:name=".Splash_Screen"
-            android:theme="@style/AppTheme">
+            android:theme="@style/Theme.Daylee.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,11 +22,11 @@
         </activity>
         <activity
             android:name=".RegisterActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/Theme.Daylee.NoActionBar" />
 
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/Theme.Daylee.NoActionBar" />
 
         <activity android:name=".AddNote"/>
     </application>
