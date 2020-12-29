@@ -13,8 +13,6 @@
         <activity android:name=".AuthenticationActivity"
             android:theme="@style/Theme.Daylee.NoActionBar"/>
 
-        <activity android:name=".Dashboard" />
-        
         <activity
             android:name=".Splash_Screen"
             android:theme="@style/Theme.Daylee.NoActionBar">
@@ -24,13 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+		
         <activity
             android:name=".RegisterActivity"
             android:theme="@style/Theme.Daylee.NoActionBar" />
-        <activity
-            android:name=".MainActivity" />
 
-        <activity android:name=".AddNote" />
+        <activity
+            android:name=".ui.MainActivity" />
+
     </application>
 
 </manifest>
