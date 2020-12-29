@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Daylee">
-        <activity android:name=".Splash_Screen">
+
+        <activity android:name=".Dashboard" />
+
+        <activity android:name=".Splash_Screen"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,12 +21,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity">
+            android:name=".RegisterActivity"
+            android:theme="@style/AppTheme" />
 
-        </activity>
-        <activity android:name=".MainActivity" >
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
 
-        </activity>
+        <activity android:name=".AddNote"/>
     </application>
 
 </manifest>

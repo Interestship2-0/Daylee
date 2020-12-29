@@ -17,6 +17,12 @@ class MainActivity : AppCompatActivity() {
             overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
         }
 
+        val btnLogin = findViewById<Button>(R.id.btnLogin)
+        btnLogin.setOnClickListener {
+            startActivity(Intent(this,Dashboard::class.java))
+            overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
+        }
+
 
     }
 }
