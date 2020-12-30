@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".LoginFragment">
 
     <TextView
         android:id="@+id/textView"
@@ -14,7 +15,7 @@
         android:layout_centerVertical="true"
         android:layout_marginTop="16dp"
         android:text="Daylee"
-        android:textColor="#FF5252"
+        android:textColor="@android:color/holo_red_light"
         android:textSize="42sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -25,9 +26,9 @@
         android:id="@+id/view"
         android:layout_width="200dp"
         android:layout_height="450dp"
-        android:background="@drawable/ic_registeration_bg"
+        android:background="@drawable/ic_login_bg"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
@@ -44,14 +45,14 @@
         app:layout_constraintTop_toTopOf="@+id/view">
 
         <Button
-            android:id="@+id/btnLogRegister"
+            android:id="@+id/btnRegLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
             android:background="@drawable/btn_top"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            android:text="Login"
+            android:text="Register"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -62,14 +63,12 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:background="@color/white"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:text="REGISTER"
+            android:text="LOGIN"
             android:textColor="@android:color/holo_red_light"
-            android:textSize="27sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
     </RelativeLayout>
@@ -84,7 +83,7 @@
         android:layout_marginRight="24dp"
         app:cardCornerRadius="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -92,25 +91,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
-                android:baselineAligned="false"
-                android:paddingLeft="6dp"
-                android:paddingRight="6dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:drawableLeft="@drawable/ic_person"
-                    android:drawablePadding="10dp"
-                    android:hint="Name"
-                    android:inputType="text|textEmailAddress"
-                    android:textSize="18sp" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -146,7 +126,7 @@
                     android:background="@color/white"
                     android:drawableStart="@drawable/ic_lock"
                     android:drawableLeft="@drawable/ic_lock"
-                    android:drawablePadding="6dp"
+                    android:drawablePadding="10dp"
                     android:hint="Password"
                     android:inputType="textPassword"
                     android:textSize="18sp" />
@@ -157,11 +137,11 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnLogin"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:background="@drawable/login_btn_bg"
-        android:text="Register"
+        android:text="login"
         android:textSize="18sp"
         android:textStyle="bold"
         app:backgroundTint="@android:color/holo_red_light"
