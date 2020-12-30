@@ -14,7 +14,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         Handler().postDelayed( {
-            startActivity(Intent (this, LoginFragment::class.java))
+            startActivity(Intent (this, AuthenticationActivity::class.java))
             finish()
         }, SPLASH_TIME)
 
