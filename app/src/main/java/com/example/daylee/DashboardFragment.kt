@@ -7,11 +7,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class Dashboard : AppCompatActivity() {
+class DashboardFragment : AppCompatActivity() {
     private val newAddNoteRequestCode = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dashboard)
+        setContentView(R.layout.fragment_dashboard)
 
         val tasks = Task.getRandomTask(50)
         val taskadapter = TaskListAdapter(tasks)
@@ -22,7 +22,7 @@ class Dashboard : AppCompatActivity() {
 
         val fab = findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
-            intent = Intent(applicationContext, AddNote::class.java)
+            intent = Intent(applicationContext, AddNoteFragment::class.java)
             startActivity(intent)
         }
 
