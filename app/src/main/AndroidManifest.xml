@@ -9,11 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Daylee">
-        <activity android:name=".AuthenticationActivity"></activity>
-        <activity
-            android:name=".LoginFragment"
-            android:theme="@style/Theme.Daylee.NoActionBar" />
-        <activity android:name=".DashboardFragment" />
+
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/Theme.Daylee.NoActionBar">
@@ -23,11 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".RegisterFragment"
-            android:theme="@style/Theme.Daylee.NoActionBar" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".AddNoteFragment" />
+        <activity android:name=".AuthenticationActivity"
+            android:theme="@style/Theme.Daylee.NoActionBar"/>
+        <activity android:name=".Dashboard" />
+        <activity android:name=".AddNote" />
     </application>
 
 </manifest>

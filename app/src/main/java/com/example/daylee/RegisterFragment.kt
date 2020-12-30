@@ -1,24 +1,41 @@
 package com.example.daylee
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 
 
-class RegisterFragment : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_register)
+class RegisterFragment : Fragment(R.layout.fragment_register) {
 
-        val btnLogRegister = findViewById(R.id.btnLogRegister) as Button
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?): View? {
 
-        btnLogRegister.setOnClickListener {
-            onBackPressed()
+        val v = inflater.inflate(R.layout.fragment_register, container, false)
+        val btnFrag1 = v.findViewById<View>(R.id.btnLogRegister) as Button
+
+        btnFrag1.setOnClickListener{
+            val fragment = LoginFragment()
+            val fragmentManager = requireActivity().supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.flFragment,fragment)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
         }
+
+        val btn = v.findViewById<View>(R.id.btnRegister) as Button
+
+        btn.setOnClickListener {
+            requireActivity().run{
+                startActivity(Intent(this, Dashboard::class.java))
+            }
+        }
+
+        return v
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        overridePendingTransition(R.anim.slide_from_left,R.anim.slide_to_right)
-    }
 }
