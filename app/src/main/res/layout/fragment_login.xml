@@ -104,6 +104,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/etLoginEmail"
                     android:background="@color/white"
                     android:drawableLeft="@drawable/ic_email"
                     android:drawablePadding="10dp"
@@ -124,6 +125,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/etLoginPassword"
                     android:background="@color/white"
                     android:drawableStart="@drawable/ic_lock"
                     android:drawableLeft="@drawable/ic_lock"
