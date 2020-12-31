@@ -16,15 +16,6 @@ class AuthenticationActivity : AppCompatActivity() {
         transaction.replace(R.id.flFragment,logfrag)
         transaction.commit()
 
-        val navController = Navigation.findNavController(this, R.id.flFragment)
-        NavigationUI.setupActionBarWithNavController(this,navController)
-
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return NavigationUI.navigateUp(
-            Navigation.findNavController(this, R.id.flFragment),
-            null
-        )
-    }
 }
