@@ -1,9 +1,11 @@
-package com.example.daylee
+package com.example.daylee.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.daylee.AuthenticationActivity
+import com.example.daylee.R
 
 class Splash_Screen : AppCompatActivity() {
 

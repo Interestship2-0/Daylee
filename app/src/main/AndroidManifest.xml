@@ -14,7 +14,7 @@
             android:theme="@style/Theme.Daylee.NoActionBar"/>
 
         <activity
-            android:name=".Splash_Screen"
+            android:name=".ui.Splash_Screen"
             android:theme="@style/Theme.Daylee.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
