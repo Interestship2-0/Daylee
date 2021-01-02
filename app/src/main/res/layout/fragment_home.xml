@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="10dp"
-    tools:context=".Dashboard">
+    tools:context=".ui.HomeFragment">
+
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_tasks"
+        android:id="@+id/recycler_view_notes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="3dp"
@@ -23,7 +24,7 @@
         android:layout_marginRight="5dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/button_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_add_24"
