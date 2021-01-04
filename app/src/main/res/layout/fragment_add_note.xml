@@ -44,7 +44,7 @@
         android:textSize="12sp"
         android:hint="Description"
         android:background="@drawable/edit_text_border"
-        android:inputType="text"
+        android:inputType="textMultiLine"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/button_save"
         app:layout_constraintEnd_toEndOf="parent"
